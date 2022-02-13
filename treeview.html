@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="./assets/images/favicon.png" />
+    <title>الإمارة الإلكترونية</title>
+    <link rel="stylesheet" href="css/simplebar.css" />
+    <link rel="stylesheet" href="css/feather.css" />
+    <link rel="stylesheet" href="css/app-light.css" id="lightTheme" />
+ 
+
+   
+  </head>
+
+  <body class="vertical light rtl">
+    <div class="wrapper">
+      <div class="card shadow m-0 p-0">
+        <div class="card-body">
+                <div class="row text-center">
+                
+                  <div class="col-md-6">
+                    <ul id="tree2">
+                      <li><a href="#">TECH</a>
+                        <ul>
+                          <li>Company Maintenance</li>
+                          <li>Employees
+                            <ul>
+                              <li>Reports
+                                <ul>
+                                  <li>Report1</li>
+                                  <li>Report2</li>
+                                  <li>Report3</li>
+                                </ul>
+                              </li>
+                              <li>Employee Maint.</li>
+                            </ul>
+                          </li>
+                          <li>Human Resources</li>
+                        </ul>
+                      </li>
+                      <li>XRP
+                        <ul>
+                          <li>Company Maintenance</li>
+                          <li>Employees
+                            <ul>
+                              <li>Reports
+                                <ul>
+                                  <li>Report1</li>
+                                  <li>Report2</li>
+                                  <li>Report3</li>
+                                </ul>
+                              </li>
+                              <li>Employee Maint.</li>
+                            </ul>
+                          </li>
+                          <li>Human Resources</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="list-group list-group-flush">
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                        
+                          <div class="col">
+                            <p class="small mb-0"><strong>الإسم</strong></p>
+                            <small>
+                              <span class="text-muted"> السيد الكبير اوي اوي أسامة عبدة دياب</span></small>
+                          </div>
+                    
+                         
+                        </div>
+                      </div>
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <p class="small mb-0"><strong>الإسم</strong></p>
+                            <small>
+                              <span class="text-muted"> السيد الكبير اوي اوي أسامة عبدة دياب</span></small>
+                          </div>
+                       
+                         
+                        </div>
+                      </div>
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                        
+                          <div class="col">
+                            <p class="small mb-0"><strong>الإسم</strong></p>
+                            <small>
+                              <span class="text-muted"> السيد الكبير اوي اوي أسامة عبدة دياب</span></small>
+                          </div>
+                         
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <ul class="avatars-list">
+                      <li class="m-2">
+                        <a href="#!">
+                          <img alt="..." class="avatar-img rounded-circle" src="assets/images/face-1.jpg">
+                        </a>
+                      </li>
+                      <li class="m-2">
+                        <a href="#!">
+                          <img alt="..." class="avatar-img rounded-circle" src="assets/images/face-1.jpg">
+                        </a>
+                      </li>
+                      <li class="m-2">
+                        <a href="#!">
+                          <img alt="..." class="avatar-img rounded-circle" src="assets/images/face-1.jpg">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              
+</div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/simplebar.min.js"></script>
+    <script src="js/daterangepicker.js"></script>
+    <script src="js/jquery.stickOnScroll.js"></script>
+    <script src="js/tinycolor-min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/apps.js"></script>
+    <script>
+        $.fn.extend({
+      treed: function (o) {
+      var openedClass = 'fe-plus';
+      var closedClass = 'fe-minus';
+      if (typeof o != 'undefined'){
+        if (typeof o.openedClass != 'undefined'){
+        openedClass = o.openedClass;
+        }
+        if (typeof o.closedClass != 'undefined'){
+        closedClass = o.closedClass;
+        }
+      };
+      
+        //initialize each of the top levels
+        var tree = $(this);
+        tree.addClass("tree");
+        tree.find('li').has("ul").each(function () {
+            var branch = $(this); //li with children ul
+            branch.prepend("<i class='fe " + closedClass + "'></i>");
+            branch.addClass('branch');
+            
+            branch.on('click', function (e) {
+                if (this == e.target) {
+                    var icon = $(this).children('i:first');
+                    icon.toggleClass(openedClass + " " + closedClass);
+                    $(this).children().children().toggle();
+                }
+            })
+            branch.children().children().toggle();
+        });
+        
+
+        //fire event from the dynamically added icon
+      tree.find('.branch .indicator').each(function(){
+        $(this).on('click', function () {
+            $(this).closest('li').click();
+        });
+      });
+        //fire event to open branch if the li contains an anchor instead of text
+        tree.find('.branch>a').each(function () {
+            $(this).on('click', function (e) {
+                $(this).closest('li').click();
+                e.preventDefault();
+            });
+        });
+        //fire event to open branch if the li contains a button instead of text
+        tree.find('.branch>button').each(function () {
+            $(this).on('click', function (e) {
+                $(this).closest('li').click();
+                e.preventDefault();
+            });
+        });
+    }
+});
+
+//Initialization of treeviews
+
+
+$('#tree2').treed({openedClass:'fe-minus rounded-circle bg-light-dark m-2 p-1', closedClass:'fe-plus fe-lg rounded-circle bg-primary m-2 p-1'});
+
+
+
+
+// $('#tree2').treed({openedClass:'glyphicon-folder-open', closedClass:'glyphicon-folder-close'});
+
+// $('#tree3').treed({openedClass:'glyphicon-chevron-right', closedClass:'glyphicon-chevron-down'});
+
+
+
+    </script>
+  </body>
+</html>

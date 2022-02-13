@@ -1,0 +1,1717 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="./assets/images/favicon.png">
+  <title>الإمارة الإلكترونية</title>
+  <link rel="stylesheet" href="css/simplebar.css">
+  <link rel="stylesheet" href="css/feather.css">
+  <link rel="stylesheet" href="css/app-light.css" id="lightTheme">
+
+</head>
+
+<body class="vertical light rtl">
+
+  <div class="wrapper">
+
+    <!-- TOP navbar -->
+    <nav class="topnav navbar navbar-light">
+
+      <ul class="nav">
+        <button type="button" class="navbar-toggler text-muted mt-2 p-0 mr-3 collapseSidebar">
+          <i class="fe fe-menu navbar-toggler-icon"></i>
+        </button>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-muted pr-0" href="#" id="navbarDropdownMenuLink" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="avatar avatar-sm mt-2">
+              <img src="./assets/images/marc.jpg" alt="..." class="avatar-img rounded-circle">
+            </span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">الملف الشخصي</a>
+            <a class="dropdown-item" href="#">الإعدادات</a>
+          </div>
+        </li>
+        <li class="nav-item nav-notif">
+          <a class="nav-link text-muted my-2" href="./#" data-toggle="modal" data-target=".modal-notif">
+            <span class="text-primary"> التنبيهات </span>
+
+            <span class="fe fe-bell fe-16"></span>
+            <span class="dot dot-md bg-success"></span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-muted my-2" href="#" data-toggle="modal" data-target=".modal-shortcut">
+            <span class="text-primary"> التطبيقات </span>
+
+            <span class="fe fe-grid fe-16"></span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-muted my-2" href="#">
+            <span class="text-primary"> تغيير كلمة السر </span>
+            <span class="fe fe-lock fe-16"></span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-muted my-2" href="#">
+            <span class="text-primary"> تسجيل الخروج </span>
+            <span class="fe fe-log-out fe-16"></span>
+          </a>
+        </li>
+        <li class="nav-item my-2">
+          <form class="form-inline searchform text-muted">
+            <input class="form-control bg-light-green w-100 text-muted" type="search" placeholder="البحث "
+              aria-label="Search">
+          </form>
+        </li>
+      </ul>
+
+
+
+      <span class="navbar-logo">
+        <img src="./assets/images/logomin.png" alt="logo" class="navbar-brand-img">
+      </span>
+
+
+    </nav>
+    <!-- TOP navbar -->
+
+    <!-- RIGHT navbar -->
+    <aside class="sidebar-left border-right bg-white shadow" id="leftSidebar" data-simplebar="init">
+      <div class="simplebar-wrapper" style="margin: 0px;">
+        <div class="simplebar-height-auto-observer-wrapper">
+          <div class="simplebar-height-auto-observer"></div>
+        </div>
+        <div class="simplebar-mask">
+          <div class="simplebar-offset" style="left: 0px; bottom: 0px;">
+            <div class="simplebar-content-wrapper" style="height: 100%; overflow: hidden scroll;">
+              <div class="simplebar-content" style="padding: 0px;">
+                <a href="#" class="btn collapseSidebar toggle-btn d-lg-none text-muted ml-2 mt-3" data-toggle="toggle">
+                  <i class="fe fe-x"><span class="sr-only"></span></i>
+                </a>
+                <nav class="vertnav navbar navbar-light">
+                  <div class="w-100 mb-4 d-flex">
+                    <a class="navbar-brand mx-auto mt-2 flex-fill text-center" href="/">
+                      <img
+                      src="./assets/images/logo-01.svg"
+                      alt="logo"
+                      class="navbar-brand-img img-fluid"
+                      style="width: 96px;"
+                    />
+                    </a>
+                  </div>
+                  <ul class="navbar-nav flex-fill w-100 mb-2">
+                    <li class="nav-item dropdown active">
+                      <a href="http://localhost/home" class="nav-link">
+                        <i class="fe fe-home fe-24"></i>
+                        <span class="ml-3 item-text">الرئيسية</span>
+                      </a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                      <a href="#app-2" data-toggle="collapse" aria-expanded="false"
+                        class="dropdown-toggle nav-link collapsed">
+                        <i class="fe fe-settings fe-24"></i>
+                        <span class="ml-3 item-text">لوحة التحكم</span>
+                      </a>
+                      <ul class="list-unstyled pl-2 collapse" id="app-2" >
+                        <li class="nav-item dropdown ">
+                          <a href="http://localhost/control/departments" class="nav-link pl-3">
+                            <span class="item-text">
+                              الإدارات
+                            </span>
+                          </a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                          <a href="http://localhost/control/groups" class="nav-link pl-3">
+                            <span class="item-text">
+                              المجموعات
+                            </span>
+                          </a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                          <a href="http://localhost/control/users" class="nav-link pl-3">
+                            <span class="item-text">
+                              المستخدمين
+                            </span>
+                          </a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                          <a href="http://localhost/control/apps" class="nav-link pl-3">
+                            <span class="item-text">
+                              التطبيقات
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown ">
+                      <a href="#app-25" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link">
+                        <i class="fe fe-file-plus fe-24"></i>
+                        <span class="ml-3 item-text">خدمات المدراء</span>
+                      </a>
+                      <ul class="collapse list-unstyled pl-2" id="app-25">
+                        <li class="nav-item dropdown ">
+                          <a href="http://localhost/vacations/approval" class="nav-link pl-3">
+                            <span class="item-text">
+                              إعتماد إجازة إلكترونية
+                            </span>
+                          </a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                          <a href="#sub-99" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle nav-link">
+                            <span class="item-text">
+                              اثبات الحضور والانصراف
+                            </span>
+                          </a>
+                          <ul class="collapse list-unstyled pl-2" id="sub-99">
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="http://localhost/manager/regattendance">
+                                <span class="item-text">
+                                  تسجيل الحضور والانصراف
+                                </span>
+                              </a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="http://localhost/manager/regattendance/report">
+                                <span class="item-text">
+                                  عرض أوقات الحضور والانصراف
+                                </span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdown ">
+                          <a href="#sub-44" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle nav-link">
+                            <span class="item-text">
+                              متابعة دوام الموظفين
+                            </span>
+                          </a>
+                          <ul class="collapse list-unstyled pl-2" id="sub-44">
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="http://localhost/attendance/department">
+                                <span class="item-text">
+                                  الإدارة الحالية
+                                </span>
+                              </a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="http://localhost/attendance/manual_attend">
+                                <span class="item-text">
+                                  التحضير اليدوي
+                                </span>
+                              </a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="http://localhost/attendance/manual_attend_multi">
+                                <span class="item-text">
+                                  التحضير اليدوي (متعدد التاريخ)
+                                </span>
+                              </a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="http://localhost/attendance/user_report">
+                                <span class="item-text">
+                                  بيان حضور موظف
+                                </span>
+                              </a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="http://localhost/attendance/permission">
+                                <span class="item-text">
+                                  الاذونات
+                                </span>
+                              </a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="http://localhost/attendance/dep_report">
+                                <span class="item-text">
+                                  بيان البصمة لإدارة
+                                </span>
+                              </a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="http://localhost/attendance/exception">
+                                <span class="item-text">
+                                  الاستثناءات
+                                </span>
+                              </a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="http://localhost/attendance/fingerprint_exception">
+                                <span class="item-text">
+                                  المعفيين من البصمة
+                                </span>
+                              </a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="http://localhost/attendance/add_dept_manual">
+                                <span class="item-text">
+                                  اضافة الادارات يدويا
+                                </span>
+                              </a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="http://localhost/attendance/hr_exception">
+                                <span class="item-text">
+                                  الاستثناءات الخاصة بالموارد البشرية
+                                </span>
+                              </a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="http://localhost/attendance/attend_statistics">
+                                <span class="item-text">
+                                  احصائية موظفي الادارة
+                                </span>
+                              </a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="http://localhost/attendance/dept_staff_statistic">
+                                <span class="item-text">
+                                  احصائية الحضور السلبي
+                                </span>
+                              </a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="http://localhost/attendance/mon_attend_sum">
+                                <span class="item-text">
+                                  الخلاصة الشهرية للحضور والإنصراف
+                                </span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdown ">
+                          <a href="http://localhost/manager/alteremoval" class="nav-link pl-3">
+                            <span class="item-text">
+                              إزالة بديل من إجازة
+                            </span>
+                          </a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                          <a href="#sub-92" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle nav-link">
+                            <span class="item-text">
+                              تغيير الإدارة لموظف
+                            </span>
+                          </a>
+                          <ul class="collapse list-unstyled pl-2" id="sub-92">
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="http://localhost/manager/changedept_inserted">
+                                <span class="item-text">
+                                  الإدارات
+                                </span>
+                              </a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="http://localhost/manager/changedept_index">
+                                <span class="item-text">
+                                  تغيير الإدارة لموظف
+                                </span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdown ">
+                          <a href="http://localhost/manager/timesheetrequestapprove" class="nav-link pl-3">
+                            <span class="item-text">
+                              إعتماد طلبات الدوام المرن
+                            </span>
+                          </a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                          <a href="http://localhost/manager/monthlydeduction/governer" class="nav-link pl-3">
+                            <span class="item-text">
+                              اعتماد الحسم الشهري
+                            </span>
+                          </a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                          <a href="http://localhost/manager/leave" class="nav-link pl-3">
+                            <span class="item-text">
+                              إعتماد الإستئذان
+                            </span>
+                          </a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                          <a href="#sub-125" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle nav-link">
+                            <span class="item-text">
+                              اعتماد الترشح للدورات التدريبية
+                            </span>
+                          </a>
+                          <ul class="collapse list-unstyled pl-2" id="sub-125">
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="http://localhost/manager/coursesrequests">
+                                <span class="item-text">
+                                  اعتماد الترشح للدورات التدريبية
+                                </span>
+                              </a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="http://localhost/manager/coursesrequests/managers">
+                                <span class="item-text">
+                                  طلبات الترشح للقيادات
+                                </span>
+                              </a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3"
+                                href="http://localhost/manager/coursesrequests/emp_cancel_programs">
+                                <span class="item-text">
+                                  طلبات الاعتذار للموظفين
+                                </span>
+                              </a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3"
+                                href="http://localhost/manager/coursesrequests/manager_cancel_programs">
+                                <span class="item-text">
+                                  طلبات الاعتذار للقيادات
+                                </span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdown ">
+                          <a href="http://localhost/manager/trainingrequest" class="nav-link pl-3">
+                            <span class="item-text">
+                              ترشيح الموظفين للبرامج التدريبية
+                            </span>
+                          </a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                          <a href="#sub-27" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle nav-link">
+                            <span class="item-text">
+                              التقييم السنوي للأداء الوظيفي
+                            </span>
+                          </a>
+                          <ul class="collapse list-unstyled pl-2" id="sub-27">
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="http://localhost/evaluation/manager/evaluate">
+                                <span class="item-text">
+                                  تقييم الموظفين
+                                </span>
+                              </a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="http://localhost/evaluation/manager/report">
+                                <span class="item-text">
+                                  تقرير التقييم
+                                </span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdown ">
+                          <a href="http://localhost/manager/delegation" class="nav-link pl-3">
+                            <span class="item-text">
+                              رصيد الانتداب للموظفين
+                            </span>
+                          </a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                          <a href="http://localhost/manager/privileges" class="nav-link pl-3">
+                            <span class="item-text">
+                              الصلاحيات
+                            </span>
+                          </a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                          <a href="http://localhost/manager/authorization" class="nav-link pl-3">
+                            <span class="item-text">
+                              تفويض صلاحياتي
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown ">
+                      <a href="#app-24" data-toggle="collapse" aria-expanded="false"
+                        class="dropdown-toggle nav-link collapsed">
+                        <i class="fe fe-user fe-24"></i>
+                        <span class="ml-3 item-text">خدمات الموظف</span>
+                      </a>
+                      <ul class="list-unstyled pl-2 collapse" id="app-24" >
+                        <li class="nav-item dropdown ">
+                          <a href="http://localhost/salaryreceipt" class="nav-link pl-3">
+                            <span class="item-text">
+                              قسيمة الراتب
+                            </span>
+                          </a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                          <a href="http://localhost/evaluation/employee/evaluation" class="nav-link pl-3">
+                            <span class="item-text">
+                              التقييم السنوي للأداء الوظيفي
+                            </span>
+                          </a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                          <a href="#sub-18" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle nav-link collapsed">
+                            <span class="item-text">
+                              الإجازة الإلكترونية
+                            </span>
+                          </a>
+                          <ul class="list-unstyled pl-2 collapse" id="sub-18" >
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="http://localhost/vacations/request">
+                                <span class="item-text">
+                                  طلب إجازة
+                                </span>
+                              </a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="http://localhost/vacations/enter">
+                                <span class="item-text">
+                                  إدخال إجازة لمنسوبي المحافظات
+                                </span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdown ">
+                          <a href="#sub-63" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle nav-link collapsed">
+                            <span class="item-text">
+                              معلومات الموظف
+                            </span>
+                          </a>
+                          <ul class="list-unstyled pl-2 collapse" id="sub-63" >
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="http://localhost/employee_info">
+                                <span class="item-text">
+                                  معلومات الموظف
+                                </span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdown ">
+                          <a href="#sub-79" data-toggle="collapse" aria-expanded="true"
+                            class="dropdown-toggle nav-link">
+                            <span class="item-text">
+                              تقارير الموظف
+                            </span>
+                          </a>
+                          <ul class="list-unstyled pl-2 collapse show" id="sub-79" >
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="http://localhost/employeereports/absences">
+                                <span class="item-text">
+                                  الخلاصة السنوية للحضور والإنصراف
+                                </span>
+                              </a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="#">
+                                <span class="item-text">
+                                  طباعة وثيقة إلكترونية
+                                </span>
+                              </a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="#">
+                                <span class="item-text">
+                                  تقرير الإستحقاق
+                                </span>
+                              </a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="#">
+                                <span class="item-text">
+                                  بيان حضور موظف
+                                </span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdown ">
+                          <a href="#sub-103" data-toggle="collapse" aria-expanded="true"
+                            class="dropdown-toggle nav-link">
+                            <span class="item-text">
+                              بحث الموظفين
+                            </span>
+                          </a>
+                          <ul class="list-unstyled pl-2 collapse show" id="sub-103" >
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="#">
+                                <span class="item-text">
+                                  بحث عن موظف
+                                </span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdown ">
+                          <a href="#sub-109" data-toggle="collapse" aria-expanded="true"
+                            class="dropdown-toggle nav-link">
+                            <span class="item-text">
+                              ملاحظة على بياناتي
+                            </span>
+                          </a>
+                          <ul class="list-unstyled pl-2 collapse show" id="sub-109" >
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="http://localhost/informationnotes/send">
+                                <span class="item-text">
+                                  ارسال ملاحظة
+                                </span>
+                              </a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="http://localhost/informationnotes/recieve">
+                                <span class="item-text">
+                                  تلقي طلبات الملاحظات
+                                </span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdown ">
+                          <a href="http://localhost/flexabletimesheet" class="nav-link pl-3">
+                            <span class="item-text">
+                              الدوام المرن
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown ">
+                      <a href="#app-40" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle nav-link">
+                        <i class="fe fe-clipboard fe-24"></i>
+                        <span class="ml-3 item-text">الاتصالات الإدارية</span>
+                      </a>
+                      <ul class="list-unstyled pl-2 collapse show" id="app-40" >
+                        <li class="nav-item dropdown ">
+                          <a href="#sub-37" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle nav-link">
+                            <span class="item-text">
+                              الاستعلام والمتابعة
+                            </span>
+                          </a>
+                          <ul class="collapse list-unstyled pl-2" id="sub-37">
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="http://localhost/processes/query">
+                                <span class="item-text">
+                                  الاستعلام
+                                </span>
+                              </a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="http://localhost/processes/follow">
+                                <span class="item-text">
+                                  المتابعة
+                                </span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdown ">
+                          <a href="#sub-60" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle nav-link">
+                            <span class="item-text">
+                              ص/التعاميم والمعاملات الصادرة
+                            </span>
+                          </a>
+                          <ul class="collapse list-unstyled pl-2" id="sub-60">
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="http://localhost/processes/circulars/employee">
+                                <span class="item-text">
+                                  ص/ التعاميم والمعاملات المرسلة إليك
+                                </span>
+                              </a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="http://localhost/processes/circulars">
+                                <span class="item-text">
+                                  إرسال ص/التعاميم الصادرة للجهة
+                                </span>
+                              </a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="http://localhost/processes/copy">
+                                <span class="item-text">
+                                  إرسال ص/المعاملات الصادرة للجهة
+                                </span>
+                              </a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="http://localhost/processes/circulars/search">
+                                <span class="item-text">
+                                  البحث
+                                </span>
+                              </a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="http://localhost/processes/departments">
+                                <span class="item-text">
+                                  اضافة الادارات يدويا
+                                </span>
+                              </a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="http://localhost/processes/circulars/reports">
+                                <span class="item-text">
+                                  التقرير الشامل
+                                </span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdown ">
+                          <a href="http://localhost/processes/open/late" class="nav-link pl-3">
+                            <span class="item-text">
+                              جميع المعاملات المتأخرة
+                            </span>
+                          </a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                          <a href="http://localhost/processes/open/paper" class="nav-link pl-3">
+                            <span class="item-text">
+                              المعاملات الورقية
+                            </span>
+                          </a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                          <a href="http://localhost/processes/open/electronic" class="nav-link pl-3">
+                            <span class="item-text">
+                              المعاملات الإلكترونية
+                            </span>
+                          </a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                          <a href="http://localhost/processes/sendinfo" class="nav-link pl-3">
+                            <span class="item-text">
+                              ارسال بيانات المعاملة
+                            </span>
+                          </a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                          <a href="http://localhost/processes/open/unreceived" class="nav-link pl-3">
+                            <span class="item-text">
+                              المعاملات الغير مستلمة
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown ">
+                      <a href="#app-26" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link">
+                        <i class="fe fe-grid fe-24"></i>
+                        <span class="ml-3 item-text">التطبيقات</span>
+                      </a>
+                      <ul class="collapse list-unstyled pl-2" id="app-26">
+                        <li class="nav-item dropdown ">
+                          <a href="#sub-15" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle nav-link">
+                            <span class="item-text">
+                              الرسائل القصيرة
+                            </span>
+                          </a>
+                          <ul class="collapse list-unstyled pl-2" id="sub-15">
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="http://localhost/sms/groups">
+                                <span class="item-text">
+                                  المجموعات
+                                </span>
+                              </a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="http://localhost/sms/sms">
+                                <span class="item-text">
+                                  إرسال
+                                </span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdown ">
+                          <a href="#sub-9" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle nav-link">
+                            <span class="item-text">
+                              المراجعين
+                            </span>
+                          </a>
+                          <ul class="collapse list-unstyled pl-2" id="sub-9">
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="http://localhost/visitors/entering">
+                                <span class="item-text">
+                                  إذن دخول لمراجع
+                                </span>
+                              </a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="http://localhost/visitors/approval">
+                                <span class="item-text">
+                                  توقيع على إذن دخول مراجع
+                                </span>
+                              </a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="http://localhost/visitors/reception">
+                                <span class="item-text">
+                                  استقبال وتدقيق بيانات المراجعين
+                                </span>
+                              </a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="http://localhost/visitors/exiting">
+                                <span class="item-text">
+                                  خروج وتدقيق بيانات المراجعين
+                                </span>
+                              </a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="http://localhost/visitors/report">
+                                <span class="item-text">
+                                  تقرير عن حركة المراجعين
+                                </span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown ">
+                      <a href="#app-86" data-toggle="collapse" aria-expanded="false"
+                        class="dropdown-toggle nav-link collapsed">
+                        <i class="fe fe-monitor fe-24"></i>
+                        <span class="ml-3 item-text">الخدمات الإلكترونية</span>
+                      </a>
+                      <ul class="list-unstyled pl-2 collapse" id="app-86" >
+                        <li class="nav-item dropdown ">
+                          <a href="#sub-87" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle nav-link collapsed">
+                            <span class="item-text">
+                              القضايا الإتلافية(المخدرات)
+                            </span>
+                          </a>
+                          <ul class="list-unstyled pl-2 collapse" id="sub-87" >
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="#">
+                                <span class="item-text">
+                                  اضافة القضايا
+                                </span>
+                              </a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="#">
+                                <span class="item-text">
+                                  بحث عن القضايا
+                                </span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdown ">
+                          <a href="http://localhost/vacationreview" class="nav-link pl-3">
+                            <span class="item-text">
+                              تدقيق الموارد البشرية
+                            </span>
+                          </a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                          <a href="http://localhost/searchemployeeinfo" class="nav-link pl-3">
+                            <span class="item-text">
+                              بحث بمعلومات موظف
+                            </span>
+                          </a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                          <a href="#sub-141" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle nav-link">
+                            <span class="item-text">
+                              إرشيف معاملات الإدارة
+                            </span>
+                          </a>
+                          <ul class="collapse list-unstyled pl-2" id="sub-141">
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="#">
+                                <span class="item-text">
+                                  جميع المعاملات المتأخرة
+                                </span>
+                              </a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="#">
+                                <span class="item-text">
+                                  رفع ملفات إرشيف
+                                </span>
+                              </a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="#">
+                                <span class="item-text">
+                                  أرشيف المختصين
+                                </span>
+                              </a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="#">
+                                <span class="item-text">
+                                  أرشيف الإدارة
+                                </span>
+                              </a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link pl-3" href="#">
+                                <span class="item-text">
+                                  تقرير المعاملات المتراكمة
+                                </span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="simplebar-placeholder" style="width: 255px; height: 707px;"></div>
+      </div>
+      <div class="simplebar-track simplebar-horizontal" style="visibility: hidden;">
+        <div class="simplebar-scrollbar" style="width: 0px; display: none;"></div>
+      </div>
+      <div class="simplebar-track simplebar-vertical" style="visibility: visible;">
+        <div class="simplebar-scrollbar" style="height: 616px; display: block; transform: translate3d(0px, 0px, 0px);">
+        </div>
+      </div>
+    </aside>
+    <!-- RIGHT navbar -->
+
+    <main role="main" class="main-content">
+      <div class="container-fluid">
+
+
+        <div class="row my-2">
+          <div class="col-md-2 col-xl-2" id="draggable">
+            <div class="card shadow border-0">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col-3 text-center">
+                    <span class="circle circle-sm bg-secondary">
+                      <i class="fe fe-16 fe-tool text-white mb-0"></i>
+                    </span>
+                  </div>
+                  <div class="col">
+                    <a href="" class="h6">الدعم فني</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-2 col-xl-2" id="draggable">
+            <div class="card shadow border-0">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col-3 text-center">
+                    <span class="circle circle-sm bg-secondary">
+                      <i class="fe fe-file-minus fe-activity text-white mb-0"></i>
+                    </span>
+                  </div>
+                  <div class="col">
+                    <a href="" class="h6">طلب إستئذان</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-xl-2" id="draggable">
+            <div class="card shadow border-0">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col-3 text-center">
+                    <span class="circle circle-sm bg-secondary">
+                      <i class="fe fe-16 fe-file-plus text-white mb-0"></i>
+                    </span>
+                  </div>
+                  <div class="col">
+                    <a href="" class="h6">المعاملات الإلكترونية</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-xl-2" id="draggable">
+            <div class="card shadow border-0">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col-3 text-center">
+                    <span class="circle circle-sm bg-secondary">
+                      <i class="fe fe-16 fe-file-text text-white mb-0"></i>
+                    </span>
+                  </div>
+                  <div class="col">
+                    <a href="" class="h6">المعاملات الورقية</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-2 col-xl-2" id="draggable">
+            <div class="card shadow border-0">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col-3 text-center">
+                    <span class="circle circle-sm bg-secondary">
+                      <i class="fe fe-16 fe-grid text-white mb-0"></i>
+                    </span>
+                  </div>
+                  <div class="col">
+                    <a href="" class="h6">الأنظمة التطبيقية</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-xl-2" id="draggable">
+            <div class="card shadow border-0">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col-3 text-center">
+                    <span class="circle circle-sm bg-secondary">
+                      <i class="fe fe-16 fe-layers text-white mb-0"></i>
+                    </span>
+                  </div>
+                  <div class="col">
+                    <a href="" class="h6">الانظمة واللوائح
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row my-2">
+          <div class="col-md-12">
+            <div class="card shadow">
+              <div class="card-body alert-light">
+                <div class="alert alert-light mb-0" role="alert">
+                  <span class="fe fe-alert-circle fe-16 mr-2"></span>
+                  يسر الإدارة العامة لتقنية المعلومات استقبال طلبات الصلاحيات علي الإنظمة والدعم التقني علي البريد
+                  الإلكتروني التالي itsuh6port@makkah.gov.sa
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row my-2">
+          <div class="col">
+            <div class="card mb-4 shadow">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col">
+                    <h3 class="h5 mt-4 mb-2 text-center">
+                      <i class="fe fe-16 fe-file-text" aria-hidden="true"></i>
+                      <span>التنبيهات</span>
+                    </h3>
+                    <div id="noticesCarousel" class="carousel slide" data-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item text-center">
+                          <h6 class="text-dark">الإدارة العامة للتخطيط والتطوير - برنامج إثرائي</h6>
+                          <p class="card-subtitle text-muted my-2">
+                            1442/03/01
+                            <i class="fe fe-calendar" aria-hidden="true"></i>
+                          </p>
+                          <div class="card-subtitle text-muted my-2">
+                            <p class="w-75 m-auto">
+                              نظراً لما يمثله التدريب عن بعد برنامج ( إثرائي ) من رفع الكفاءة والمهارات لدى الموظفين
+                              والإستفادة منها في عناصر الترقية فتهيب الإدارة العامة للتخطيط والتطوير من كافة الموظفين من
+                              منسوبي الإمارة بالإلتحاق بهذا البرنامج من خلال الدخول
+                            </p>
+                          </div>
+                          <p class="m-auto text-center">
+                            <a href="https://ethrai.sa/#!/signup" class="text-primary">إضغط هنا</a>
+                          </p>
+                        </div>
+                        <div class="carousel-item text-center active carousel-item-left">
+                          <h6 class="text-dark">الخطة التنفيذية السنوية</h6>
+                          <p class="card-subtitle text-muted my-2">
+                            1442/07/12
+                            <i class="fe fe-calendar" aria-hidden="true"></i>
+                          </p>
+                          <div class="card-subtitle text-muted my-2">
+                            <p class="w-75 m-auto">
+                              قامت الإدارة العامة للتخطيط والتميز المؤسسي بإعداد الخطة التنفيذية السنوية لإمارة مكة
+                              المكرمة لعام 2021م ويمكن الإطلاع على الخطة من خلال الضغط هنا
+                            </p>
+                          </div>
+                          <p class="m-auto text-center">
+                            <a href="https://sso.makkah.gov.sa/images/plan_2021.pdf" class="text-primary">إضغط هنا</a>
+                          </p>
+                        </div>
+                        <div class="carousel-item text-center carousel-item-next carousel-item-left">
+                          <h6 class="text-dark">نظام الإتصالات الإدارية الجديد "تراسل"</h6>
+                          <p class="card-subtitle text-muted my-2">
+                            1442/02/28
+                            <i class="fe fe-calendar" aria-hidden="true"></i>
+                          </p>
+                          <div class="card-subtitle text-muted my-2">
+                            <p class="w-75 m-auto">
+                              الإدارة العامة لتقنية المعلومات تم اطلاق نظام تراسل لإدارة المعاملات علي الشبكة الداخلية
+                              بديوان الإمارة ومكتب سمو أمير المنطقة بجدة وذلك كمرحلة أولى
+                            </p>
+                          </div>
+                          <p class="m-auto text-center">
+                            <a href="http://10.5.34.130/TarasolSite02/login.aspx" class="text-primary">إضغط هنا</a>
+                          </p>
+                        </div>
+                        <div class="carousel-item text-center">
+                          <h6 class="text-dark">دليل الإجراءات</h6>
+                          <p class="card-subtitle text-muted my-2">
+                            1442/03/01
+                            <i class="fe fe-calendar" aria-hidden="true"></i>
+                          </p>
+                          <div class="card-subtitle text-muted my-2">
+                            <p class="w-75 m-auto">
+                              يسرنا أن نضع بين أيديكم دليل الإجراءات والذي يساهم في إنجاز المهام والأعمال والأهداف
+                              الموكلة لكل إدارة وقد روعي عند وضع دليل الإجراءات جودة الخدمة والسرعة والرقابة على الأعمال
+                              وإستخدام أفضل الإجراءات, للإطلاع عبر
+                            </p>
+                          </div>
+                          <p class="m-auto text-center">
+                            <a href="https://www.makkah.gov.sa/page/aldemo" class="text-primary">إضغط هنا</a>
+                          </p>
+                        </div>
+                        <div class="carousel-item text-center">
+                          <h6 class="text-dark">نظام الإتصالات الإدارية الجديد "تراسل"</h6>
+                          <p class="card-subtitle text-muted my-2">
+                            1442/03/01
+                            <i class="fe fe-calendar" aria-hidden="true"></i>
+                          </p>
+                          <div class="card-subtitle text-muted my-2">
+                            <p class="w-75 m-auto">
+                              الإدارة العامة لتقنية المعلومات ستدشن قريباً بمشيئة الله الإصدار الجديد من نظام تراسل
+                              للإتصالات الإدارية و الذي يتميز بسهولة الإستخدام و المرونة في التعامل وسرعة الإستجابة
+                              وأيضاً تخليص الأمارة ومحافظاتها من عبء التعامل مع المعاملات الورقية. للإطلاع على دليل
+                              المستخدم ومقاطع فيديو تشرح آلية إستخدام النظام
+                            </p>
+                          </div>
+                          <p class="m-auto text-center">
+                            <a href="https://sso.makkah.gov.sa/trasul" class="text-primary">إضغط هنا</a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#noticesCarousel" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#noticesCarousel" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                    <ol class="carousel-indicators">
+                      <li class="&quot;active&quot;" data-target="#noticesCarousel" data-slide-to="0"></li>
+                      <li data-target="#noticesCarousel" data-slide-to="1"></li>
+                      <li data-target="#noticesCarousel" data-slide-to="2"></li>
+                      <li data-target="#noticesCarousel" data-slide-to="3"></li>
+                      <li data-target="#noticesCarousel" data-slide-to="4"></li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center my-2">
+          <!-- MAIN CONTENT -->
+          <div class="col-md-12 col-lg-6">
+            <div class="card shadow text-center h-100">
+              <div class="card-header bg-primary">
+                معلوماتي
+              </div>
+              <div class="card-body text-center">
+
+                <div class="avatar">
+                  <img src="./assets/images/marc.jpg" alt="..." class="img-fluid" style="width: 150px;">
+                </div>
+                <div class="card-text my-2">
+                  <strong class="card-title my-0">آسامة عبدة دياب </strong>
+                  <p class="small"><span class="badge badge-dark">مصمم جرافيك</span></p>
+                  <table id="userInfo" class="table table-borderless">
+                    <tbody>
+
+                      <tr class="d-flex">
+                        <th class="col-4"> <small><strong></strong>المرتبة و الدرجة</strong><small></th>
+                        <td>الدرجة الأولى - المرتبة الاولى</td>
+                      </tr>
+                      <tr class="d-flex">
+                        <th class="col-4"> <small><strong></strong>الرقم الوظيفي</strong><small></th>
+                        <td>9110198</td>
+                      </tr>
+                      <tr class="d-flex">
+                        <th class="col-4"> <small><strong></strong>التقدير</strong><small></th>
+                        <td>جيد</td>
+                      </tr>
+                      <tr class="d-flex">
+                        <th class="col-4"> <small><strong></strong>تاريخ البداية</strong><small></th>
+                        <td>15/05/2014</td>
+                      </tr>
+                      <tr class="d-flex">
+                        <th class="col-4"> <small><strong></strong>رقم الجوال</strong><small></th>
+                        <td>0594499639</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+              </div>
+              <div class="card-footer bg-light-green">
+                <div class="row align-items-center justify-content-between">
+                  <div class="col-auto">
+                  </div>
+                  <div class="col-auto">
+                    <a href="#!" class="btn btn-xs btn-primary">المزيد</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-6">
+            <div class="card shadow text-center h-100">
+              <div class="card-header bg-primary">
+                الأنظمة واللوئح
+              </div>
+              <div class="text-center">
+                <img src="./assets/images/rules-01.svg" class="img-fluid card-img-top" style="width: 180px;">
+              </div>
+
+              <div class="card-body text-center">
+                <div class="card-text my-2">
+                  <div class="list-group list-group-flush my-n3">
+                    <div class="list-group-item">
+                      <div class="row align-items-center">
+                        <div class="col">
+                          <button class="btn btn-outline-primary btn-block" type="button">
+                            الأنظمة
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-group-item">
+                      <div class="row align-items-center">
+                        <div class="col">
+                          <button class="btn btn-outline-primary btn-block " type="button">
+                            اللوئح
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="list-group-item">
+                      <div class="row align-items-center">
+                        <div class="col">
+                          <button class="btn btn-outline-primary btn-block" type="button">
+                            الأدلة
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+              <div class="card-footer bg-light-green">
+                <div class="row d-flex justify-content-center ">
+
+                  <div class="col-md-auto">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center my-4">
+          <!-- MAIN CONTENT -->
+          <div class="col-md-12 col-lg-6">
+            <div class="card shadow text-center h-100">
+              <div class="card-header bg-primary">
+                أعمالي
+              </div>
+              <div class="card-body p-0">
+                <table class="table table-borderless table-hover">
+                  <thead class="d-none">
+                    <tr>
+                      <th>File</th>
+                      <th>Owner</th>
+                      <th>time</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <span class="fe fe-16 fe-toggle-right mx-2"></span>
+                      </td>
+                      <th>
+                        مهام قيد التنفيذ
+                      </th>
+                      <td>
+                        <span class="badge badge-pill bg-lighter-green">1</span>
+                      </td>
+                      <td>
+                        <button class="btn btn-sm btn-outline-primary " type="button">
+                          المزيد
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="bg-light">
+                      <td>
+                        <span class="fe fe-16 fe-toggle-left  mx-2"></span>
+                      </td>
+                      <th>
+                        مهام مؤجلة
+                      </th>
+                      <td>
+                        <span class="badge badge-pill bg-lighter-green">لا يوجد</span>
+                      </td>
+                      <td>
+                        <button class="btn btn-sm btn-outline-primary " type="button">
+                          المزيد
+                        </button>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <span class="fe fe-16 fe-stop-circle mx-2"></span>
+                      </td>
+                      <th>
+                        مهام معلقة
+                      </th>
+                      <td>
+                        <span class="badge badge-pill bg-lighter-green">لا يوجد</span>
+                      </td>
+                      <td>
+                        <button class="btn btn-sm btn-outline-primary " type="button">
+                          المزيد
+                        </button>
+                      </td>
+
+                    </tr>
+                    <tr class="bg-light">
+                      <td>
+                        <span class="fe fe-16 fe-clock mx-2"></span>
+                      </td>
+                      <th>
+                        مهام متأخرة
+
+                      </th>
+                      <td>
+                        <span class="badge badge-pill bg-lighter-green">3</span>
+                      </td>
+                      <td>
+                        <button class="btn btn-sm btn-outline-primary " type="button">
+                          المزيد
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="fe fe-16 fe-codepen mx-2"></span>
+                      </td>
+                      <th>
+                        مهامي المعاد إسنادها
+
+                      </th>
+                      <td>
+                        <span class="badge badge-pill bg-lighter-green">لا يوجد</span>
+                      </td>
+                      <td>
+                        <button class="btn btn-sm btn-outline-primary " type="button">
+                          المزيد
+                        </button>
+                      </td>
+                    </tr>
+
+
+                  </tbody>
+                </table>
+
+              </div>
+              <div class="card-footer bg-light-green">
+                <div class="row d-flex justify-content-center ">
+                  <div class="col-md-auto">
+                    إجمالي عدد المهام
+                  </div>
+                  <div class="col-md-auto">
+                    <span class="badge bg-primary">3</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-6">
+            <div class="card shadow text-center h-100">
+              <div class="card-header bg-primary">
+                خدماتي
+              </div>
+              <div class="card-body p-0">
+                <table class="table table-borderless table-hover">
+                  <thead class="d-none">
+                    <tr>
+                      <th>Icon</th>
+                      <th>File</th>
+                      <th>Owner</th>
+                      <th>time</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <span class="fe fe-16 fe-pen-tool mx-2"></span>
+                      </td>
+                      <th>
+                        ملاحظة علي بياناتي
+                      </th>
+                      <td>
+                        <span class="badge badge-pill bg-lighter-green">1</span>
+                      </td>
+                      <td>
+                        <button class="btn btn-sm btn-outline-primary " type="button">
+                          المزيد
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="bg-light">
+                      <td>
+                        <span class="fe fe-16 fe-wind  mx-2"></span>
+                      </td>
+                      <th>
+                        طلب أجازة إلكترونية
+                      </th>
+                      <td>
+                        <span class="badge badge-pill bg-lighter-green">لا يوجد</span>
+                      </td>
+                      <td>
+                        <button class="btn btn-sm btn-outline-primary " type="button">
+                          المزيد
+                        </button>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <span class="fe fe-16 fe-watch mx-2"></span>
+                      </td>
+                      <th>
+                        طلب إستئذان
+                      </th>
+                      <td>
+                        <span class="badge badge-pill bg-lighter-green">لا يوجد</span>
+                      </td>
+                      <td>
+                        <button class="btn btn-sm btn-outline-primary " type="button">
+                          المزيد
+                        </button>
+                      </td>
+
+                    </tr>
+                    <tr class="bg-light">
+                      <td>
+                        <span class="fe fe-16 fe-user-check mx-2"></span>
+                      </td>
+                      <th>
+                        طلب مراجع
+                      </th>
+                      <td>
+                        <span class="badge badge-pill bg-lighter-green">3</span>
+                      </td>
+                      <td>
+                        <button class="btn btn-sm btn-outline-primary " type="button">
+                          المزيد
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="fe fe-16 fe-award mx-2"></span>
+                      </td>
+                      <th>
+                        طلب الترشيح للبرامج التدريبية
+
+                      </th>
+                      <td>
+                        <span class="badge badge-pill bg-lighter-green">لا يوجد</span>
+                      </td>
+                      <td>
+                        <button class="btn btn-sm btn-outline-primary " type="button">
+                          المزيد
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="row mt-2">
+                  <div class="col-3 text-center">
+                    <div class="circle circle-xs bg-light">
+                      <span class="fe fe-briefcase fe-16"></span>
+                    </div>
+                    <div class="mt-2">
+                      <strong>الإعتيادية</strong><br>
+                      <span class="my-0 small">5 يوم</span>
+                    </div>
+                  </div>
+                  <div class="col-3 text-center">
+                    <div class="circle circle-xs bg-light">
+                      <span class="fe fe-coffee fe-16"></span>
+                    </div>
+                    <div class="mt-2">
+                      <strong>عيد الفطر</strong><br>
+                      <span class="my-0 small">5 يوم</span>
+                    </div>
+                  </div>
+                  <div class="col-3 text-center">
+                    <div class="circle circle-xs bg-light">
+                      <span class="fe fe-refresh-cw fe-16"></span>
+                    </div>
+                    <div class="mt-2">
+                      <strong>عيد الأضحى </strong><br>
+                      <span class="my-0 small">5 يوم</span>
+                    </div>
+                  </div>
+                  <div class="col-3 text-center">
+                    <div class="circle circle-xs bg-light">
+                      <span class="fe fe-calendar fe-16"></span>
+                    </div>
+                    <div class="mt-2">
+                      <strong>طلب أجازة </strong><br>
+                      <span class="my-0 small">لا يوجد</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+              <div class="card-footer bg-light-green">
+                <div class="row d-flex justify-content-center ">
+                  <div class="col-md-auto">
+
+                    إجمالي عدد الطلبات
+                  </div>
+                  <div class="col-md-auto">
+                    <span class="badge bg-primary">12</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <!-- MAIN CONTENT -->
+
+        </div>
+
+      </div>
+
+
+
+
+
+      <hr class="featurette-divider">
+      <footer class="container py-5">
+        <div class="row">
+          <div class="col-3 col-md">
+            <img src="./assets/images/footer_logo.png" class="img-fluid">
+            <small class="d-block mb-3 text-muted">© 2020</small>
+          </div>
+          <div class="col-3 col-md">
+            <ul class="list-unstyled text-small">
+              <li><a href="#">عن إتمام</a></li>
+              <li><a href="#">الاخبار</a></li>
+              <li><a href="#">شروط الاستخدام</a></li>
+
+            </ul>
+          </div>
+          <div class="col-3 col-md">
+            <ul class="list-unstyled text-small">
+              <li><a href="#">مراكز التسجيل والتفعيل</a></li>
+              <li><a href="#">دليل المستخدم</a></li>
+              <li><a href="#">الأسئلة الشائعة</a></li>
+            </ul>
+
+          </div>
+          <div class="col-3 col-md">
+            <ul class="list-unstyled text-small">
+              <li><a href="#">سياسة الخصوصية</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </footer>
+
+
+
+
+
+
+
+      <!-- MODELS -->
+
+      <div class="modal fade modal-notif modal-slide" tabindex="-1" role="dialog" aria-labelledby="defaultModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="defaultModalLabel">التنبيهات</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="list-group list-group-flush">
+                <div class="list-group-item bg-transparent">
+                  <div class="row align-items-center">
+
+                    <div class="col">
+                      <small><strong>العنوان الرئيسي للتنبيه</strong></small>
+                      <div class="my-0 text-muted small">محتوي التنبيه محتوي التنبيه محتوي التنبيه</div>
+                      <small class="badge badge-pill badge-light text-muted">1m ago</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-group-item bg-transparent">
+                  <div class="row align-items-center">
+
+                    <div class="col">
+                      <small><strong>العنوان الرئيسي للتنبيه</strong></small>
+                      <div class="my-0 text-muted small">محتوي التنبيه محتوي التنبيه محتوي التنبيه</div>
+                      <small class="badge badge-pill badge-light text-muted">1m ago</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-group-item bg-transparent">
+                  <div class="row align-items-center">
+
+                    <div class="col">
+                      <small><strong>العنوان الرئيسي للتنبيه</strong></small>
+                      <div class="my-0 text-muted small">محتوي التنبيه محتوي التنبيه محتوي التنبيه</div>
+                      <small class="badge badge-pill badge-light text-muted">1m ago</small>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="list-group-item bg-transparent">
+                  <div class="row align-items-center">
+                    <div class="col">
+                      <small><strong>العنوان الرئيسي للتنبيه</strong></small>
+                      <div class="my-0 text-muted small">محتوي التنبيه محتوي التنبيه محتوي التنبيه</div>
+                      <small class="badge badge-pill badge-light text-muted">1m ago</small>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary btn-block" data-dismiss="modal">Clear All</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade modal-shortcut modal-slide" tabindex="-1" role="dialog" aria-labelledby="defaultModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="defaultModalLabel">الإختصارات</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body px-5">
+
+              <div class="row align-items-center">
+                <div class="col-6 text-center">
+                  <div class="squircle bg-success justify-content-center">
+                    <i class="fe fe-cpu fe-32 align-self-center text-white"></i>
+                  </div>
+                  <p>البريد الإلكتروني</p>
+                </div>
+                <div class="col-6 text-center">
+                  <div class="squircle bg-primary justify-content-center">
+                    <i class="fe fe-activity fe-32 align-self-center text-white"></i>
+                  </div>
+                  <p>الأنظمة التطبيقية</p>
+                </div>
+              </div>
+              <div class="row align-items-center">
+                <div class="col-6 text-center">
+                  <div class="squircle bg-primary justify-content-center">
+                    <i class="fe fe-droplet fe-32 align-self-center text-white"></i>
+                  </div>
+                  <p>الإمارة الإلكترونية</p>
+                </div>
+                <div class="col-6 text-center">
+                  <div class="squircle bg-primary justify-content-center">
+                    <i class="fe fe-upload-cloud fe-32 align-self-center text-white"></i>
+                  </div>
+                  <p>المراجعة الداخلية</p>
+                </div>
+              </div>
+              <div class="row align-items-center">
+                <div class="col-6 text-center">
+                  <div class="squircle bg-primary justify-content-center">
+                    <i class="fe fe-users fe-32 align-self-center text-white"></i>
+                  </div>
+                  <p>نظام إدارة المهام</p>
+                </div>
+                <div class="col-6 text-center">
+                  <div class="squircle bg-primary justify-content-center">
+                    <i class="fe fe-settings fe-32 align-self-center text-white"></i>
+                  </div>
+                  <p>Settings</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/moment.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/simplebar.min.js"></script>
+  <script src='js/daterangepicker.js'></script>
+  <script src='js/jquery.stickOnScroll.js'></script>
+  <script src="js/tinycolor-min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/apps.js"></script>
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="./assets/images/favicon.png" />
+    <title>الإمارة الإلكترونية</title>
+    <link rel="stylesheet" href="css/simplebar.css" />
+    <link rel="stylesheet" href="css/feather.css" />
+    <link rel="stylesheet" href="css/app-light.css" id="lightTheme" />
+  </head>
+
+  <body class="vertical light rtl">
+    <div class="wrapper">
+      <!-- TOP navbar -->
+      <nav class="topnav navbar navbar-light">
+        <ul class="nav">
+          <button
+            type="button"
+            class="navbar-toggler text-muted mt-2 p-0 mr-3 collapseSidebar"
+          >
+            <i class="fe fe-menu navbar-toggler-icon"></i>
+          </button>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle text-muted pr-0"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <span class="avatar avatar-sm mt-2">
+                <img
+                  src="./assets/images/marc.jpg"
+                  alt="..."
+                  class="avatar-img rounded-circle"
+                />
+              </span>
+            </a>
+            <div
+              class="dropdown-menu dropdown-menu-right"
+              aria-labelledby="navbarDropdownMenuLink"
+            >
+              <a class="dropdown-item" href="#">الملف الشخصي</a>
+              <a class="dropdown-item" href="#">الإعدادات</a>
+            </div>
+          </li>
+          <li class="nav-item nav-notif">
+            <a
+              class="nav-link text-muted my-2"
+              href="./#"
+              data-toggle="modal"
+              data-target=".modal-notif"
+            >
+              <span class="text-primary"> التنبيهات </span>
+
+              <span class="fe fe-bell fe-16"></span>
+              <span class="dot dot-md bg-success"></span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a
+              class="nav-link text-muted my-2"
+              href="#"
+              data-toggle="modal"
+              data-target=".modal-shortcut"
+            >
+              <span class="text-primary"> التطبيقات </span>
+
+              <span class="fe fe-grid fe-16"></span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-muted my-2" href="#">
+              <span class="text-primary"> تغيير كلمة السر </span>
+              <span class="fe fe-lock fe-16"></span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-muted my-2" href="#">
+              <span class="text-primary"> تسجيل الخروج </span>
+              <span class="fe fe-log-out fe-16"></span>
+            </a>
+          </li>
+        </ul>
+
+        <span class="navbar-logo">
+          <img
+            src="./assets/images/logomin.png"
+            alt="logo"
+            class="navbar-brand-img"
+          />
+        </span>
+      </nav>
+      <!-- TOP navbar -->
+
+      <!-- RIGHT navbar -->
+      <aside
+        class="sidebar-left border-right bg-white shadow"
+        id="leftSidebar"
+        data-simplebar
+      >
+        <a
+          href="#"
+          class="btn collapseSidebar toggle-btn d-lg-none text-muted ml-2 mt-3"
+          data-toggle="toggle"
+        >
+          <i class="fe fe-x"><span class="sr-only"></span></i>
+        </a>
+
+        <nav class="vertnav navbar navbar-light">
+          <div class="w-100 mb-4 d-flex">
+            <a
+              class="navbar-brand mx-auto mt-2 flex-fill text-center"
+              href="home.html"
+            >
+              <img
+                src="./assets/images/logo.png"
+                alt="logo"
+                class="navbar-brand-img"
+              />
+            </a>
+          </div>
+          <ul class="navbar-nav flex-fill w-100 mb-2">
+            <li class="nav-item active w-100 mb-2">
+              <a class="nav-link" href="home.html">
+                <i class="fe fe-home fe-24"></i>
+                <span class="ml-3 item-text">الرئيسية</span>
+              </a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                href="#forms"
+                data-toggle="collapse"
+                aria-expanded="false"
+                class="dropdown-toggle nav-link"
+              >
+                <i class="fe fe-grid fe-24"></i>
+                <span class="ml-3 item-text">لوحة التحكم</span>
+              </a>
+              <ul class="collapse list-unstyled pl-4 w-100" id="forms">
+                <li class="nav-item">
+                  <a class="nav-link pl-3" href="#"
+                    ><span class="ml-1 item-text">
+                      <i class="fe fe-target fe-16 pr-2"></i>
+                      الإدارات</span
+                    ></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link pl-3" href="#"
+                    ><span class="ml-1 item-text">
+                      <i class="fe fe-group fe-16 pr-2"></i>
+                      المجموعات</span
+                    ></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link pl-3" href="#"
+                    ><span class="ml-1 item-text">
+                      <i class="fe fe-users fe-16 pr-2"></i>
+                      المستخدمين</span
+                    ></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link pl-3" href="#"
+                    ><span class="ml-1 item-text">
+                      <i class="fe fe-layers fe-16 pr-2"></i>
+                      التطبيقات</span
+                    ></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item w-100 mb-2">
+              <a class="nav-link" href="home.html">
+                <i class="fe fe-file-text fe-24"></i>
+                <span class="ml-3 item-text">الأخبار</span>
+              </a>
+            </li>
+            <li class="nav-item w-100 mb-2">
+              <a class="nav-link" href="home.html">
+                <i class="fe fe-shopping-card fe-24"></i>
+                <span class="ml-3 item-text">خدمة التخفيضات</span>
+              </a>
+            </li>
+
+            <li class="nav-item w-100 mb-2">
+              <a class="nav-link" href="home.html">
+                <i class="fe fe-file-plus fe-24"></i>
+                <span class="ml-3 item-text">خدمة المدراء</span>
+              </a>
+            </li>
+            <li class="nav-item w-100 mb-2">
+              <a class="nav-link" href="home.html">
+                <i class="fe fe-users fe-24"></i>
+                <span class="ml-3 item-text">خدمة الموظف</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <!-- RIGHT navbar -->
+
+      <main role="main" class="main-content">
+        <div class="container-fluid">
+          <form action="">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card-header bg-light-green">
+                    <h5>الخطة السنوية</h5>
+                  </div>
+                  <div class="card-body">
+                    <div class="form-inline">
+                      <div class="form-group">
+                        <label>الإدارة</label>
+                        <select class="custom-select m-2">
+                          <option selected="">------------</option>
+                          <option>سكرتارية هيئة النقل</option>
+                        </select>
+                      </div>
+
+                      <div class="form-group">
+                        <label>العام المالي</label>
+                        <select class="custom-select m-2">
+                          <option>1440</option>
+                        </select>
+                      </div>
+
+                      <button type="submit" class="btn btn-primary">
+                        عرض الخطة
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card h-100">
+              <div class="card-header bg-light-green"></div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label> الموظف المسؤل عن متابعة الخطة</label>
+                      <select class="custom-select">
+                        <option selected="">اختر الموظف</option>
+                        <option>محمد</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label> الهدف العام </label>
+                      <textarea class="form-control" rows="2"></textarea>
+                    </div>
+                  </div>
+                </div>
+
+                
+                      <div class="row align-items-baseline d-flex justify-content-start m-auto bg-primary-lighter">
+                        <div class="col-md-4">
+                          هدف استراتيجي رقم 3 هدف استراتيجي
+                        </div>
+                        <div class="col-md-2 m-0 p-0">
+                          
+                            <div class="btn-group" role="group">
+                              <a href="#" class="btn btn-warning btn-xs" data-toggle="modal" data-target="#editGoal" >
+                                <span>تعديل</span>
+                                <i class="fe fe-edit mx-1"></i>
+                              </a>
+                              <a href="#" class="btn btn-danger btn-xs"  data-toggle="modal" data-target="#deleteGoal">
+                                <span>حذف</span>
+                                <i class="fe fe-trash mx-1"></i>
+                              </a>
+                            </div>
+                        </div>
+                      </div>
+                      
+                  
+                  
+                <div class="row align-items-end">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label>الاهداف الاستراتيجية</label>
+                      <input type="text" class="form-control" />
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <a href="#" class="btn btn-primary btn-sm mx-3 addGoal">
+                        <span> إضافة هدف جديد</span>
+                        <i class="fe fe-plus"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Repeat goal -->
+                <div class="goalPlace"></div>
+                <!-- Repeat goal -->
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card h-100">
+                  <div class="card-header bg-light-green">
+                    <div class="row d-flex align-items-baseline">
+                      <div class="col-md-3">
+                          <h5>المبادرات</h5>
+                      </div>
+                      <div class="col-md-3">
+                        <h6 class="text-primary d-inline">إضافة مبادرات جديد</h6>
+                        <a href="#" class="btn btn-primary btn-xs addInit">
+                          <i class="fe fe-plus"></i>
+                    </a>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label>المبادرة</label>
+                          <input type="text" class="form-control" />
+                        </div>
+                      </div>
+                    </div>
+
+                  
+                        <div class="row align-items-baseline d-flex justify-content-between m-auto bg-primary-lighter">
+                          <div class="col-md-auto col-sm-2">
+                            <h6 class="text-primary">
+                              المؤشر القياسي
+                              <span class="text-secondary">
+                                المؤشر القياسي 1 المؤشر القياسي 1المؤشر القياسي 1
+                              </span>
+                            </h6>
+                          
+                          </div>
+                          <div class="col-md-auto col-sm-2">
+                            <h6 class="text-primary">النوع
+                              <span class="text-secondary">نسبة مئوية</span></h6>
+                          </div>
+                      
+                           <div class="col-md-auto col-sm-2">
+                           <h6 class="text-primary"> خط الأساس
+                             <span class="text-secondary">15</span>
+                           </h6>
+                           </div>
+                           
+                           <div class="col-md-auto col-sm-2">
+                            <h6 class="text-primary"> المستهدف
+                              <span class="text-secondary"> 20</span>
+                            </h6>
+                           </div>
+                          
+                           <div class="col-md-auto col-sm-2">
+                              <div class="btn-group" role="group">
+                                <a href="#" class="btn btn-warning btn-xs" data-toggle="modal" data-target="#edimeasure" >
+                                  <span>تعديل</span>
+                                  <i class="fe fe-edit mx-1"></i>
+                                </a>
+                                <a href="#" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#deletmeasure" >
+                                  <span>حذف</span>
+                                  <i class="fe fe-trash mx-1"></i>
+                                </a>
+                              </div>
+                          </div>
+                        </div>
+                   
+
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-inline form-inline d-flex justify-content-between">
+                          <div class="form-group">
+                            <label>المؤشر القياسي </label>
+                            <input type="text" class="form-control m-2" />
+                          </div>
+
+                          <div class="form-group">
+                            <label>النوع</label>
+                            <select class="custom-select m-2">
+                              <option>رقم</option>
+                              <option>نسبة مئوية</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label>خط الأساس</label>
+                            <input
+                              type="text"
+                              class="form-control m-2"
+                              value="0"
+                            />
+                          </div>
+                          <div class="form-group">
+                            <label>المستهدف</label>
+                            <input
+                              type="text"
+                              class="form-control m-2"
+                              value="0"
+                            />
+                          </div>
+
+                          <div class="form-group">
+                            <a
+                              href="#"
+                              class="btn btn-primary btn-sm mx-3 addMeasure"
+                            >
+                              <span> إضافة مؤشر جديد</span>
+                              <i class="fe fe-plus"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Measure place -->
+                    <div class="row measurePlace"></div>
+                    <!-- Measure place -->
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- repeat place -->
+            <div class="initPlace"></div>
+            <!-- repeat place -->
+
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary"> حفظ البيانات </a>
+            </div>
+          </form>
+        </div>
+
+        <footer class="container py-5">
+          <div class="row">
+            <div class="col-3 col-md">
+              <img src="./assets/images/footer_logo.png" class="img-fluid" />
+              <small class="d-block text-muted">© 2020</small>
+            </div>
+            <div class="col-3 col-md">
+              <ul class="list-unstyled text-small">
+                <li><a href="#">عن إتمام</a></li>
+                <li><a href="#">الاخبار</a></li>
+                <li><a href="#">شروط الاستخدام</a></li>
+              </ul>
+            </div>
+            <div class="col-3 col-md">
+              <ul class="list-unstyled text-small">
+                <li><a href="#">مراكز التسجيل والتفعيل</a></li>
+                <li><a href="#">دليل المستخدم</a></li>
+                <li><a href="#">الأسئلة الشائعة</a></li>
+              </ul>
+            </div>
+            <div class="col-3 col-md">
+              <ul class="list-unstyled text-small">
+                <li><a href="#">سياسة الخصوصية</a></li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+
+        <!-- MODELS -->
+
+          <div class="modal fade" id="editGoal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="editGoal" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">تعديل الهدف</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label>تعديل حقل الهدف</label>
+                    <input type="text" class="form-control">
+                  </div>
+                
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">إلغاء</button>
+                <button type="button" class="btn btn-primary">حفظ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="modal fade" id="deleteGoal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="deleteGoal" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">حذف الهدف</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="alert alert-danger" role="alert">
+                  هل أنت متأكد من الحذف
+                </div>
+                              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">إلغاء</button>
+                <button type="button" class="btn btn-danger">حذف</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="edimeasure" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="edimeasure" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">تعديل المؤشر القياسي</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label>تعديل المؤشر القياسي</label>
+                    <input type="text" class="form-control">
+                  </div>
+                
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">إلغاء</button>
+                <button type="button" class="btn btn-primary">حفظ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="deletmeasure" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="deletmeasure" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">حذف المؤشر القياسي</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="alert alert-danger" role="alert">
+                  هل أنت متأكد من الحذف
+                </div>
+                              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">إلغاء</button>
+                <button type="button" class="btn btn-danger">حذف</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        
+
+
+        <!-- MODELS -->
+        
+      </main>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/simplebar.min.js"></script>
+    <script src="js/daterangepicker.js"></script>
+    <script src="js/jquery.stickOnScroll.js"></script>
+    <script src="js/tinycolor-min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/apps.js"></script>
+
+    <script type="text/javascript">
+      $(".addGoal").on("click", function () {
+        $(this).closest(".row").clone().appendTo(".goalPlace");
+      });
+
+      $(".addMeasure").on("click", function () {
+        $(this).closest(".col-md-12").clone().appendTo(".measurePlace");
+      });
+
+      $(".addInit").on("click", function () {
+        $(this).closest(".col-md-12").clone().appendTo(".initPlace");
+      });
+    </script>
+  </body>
+</html>

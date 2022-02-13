@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="./assets/images/favicon.png">
+  <title>الإمارة الإلكترونية</title>
+  <link rel="stylesheet" href="css/simplebar.css">
+  <link rel="stylesheet" href="css/feather.css">
+  <link rel="stylesheet" href="css/app-light.css" id="lightTheme">
+</head>
+
+<body class="vertical light rtl">
+  <div class="wrapper">
+
+    <!-- TOP navbar -->
+    <nav class="topnav navbar navbar-light">
+      <ul class="nav">
+        <button type="button" class="navbar-toggler text-muted mt-2 p-0 mr-3 collapseSidebar">
+          <i class="fe fe-menu navbar-toggler-icon"></i>
+        </button>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-muted pr-0" href="#" id="navbarDropdownMenuLink" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="avatar avatar-sm mt-2">
+              <img src="./assets/images/marc.jpg" alt="..." class="avatar-img rounded-circle">
+            </span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">الملف الشخصي</a>
+            <a class="dropdown-item" href="#">الإعدادات</a>
+          </div>
+        </li>
+        <li class="nav-item nav-notif">
+          <a class="nav-link text-muted my-2" href="./#" data-toggle="modal" data-target=".modal-notif">
+            <span class="text-primary"> التنبيهات </span>
+
+            <span class="fe fe-bell fe-16"></span>
+            <span class="dot dot-md bg-success"></span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-muted my-2" href="#" data-toggle="modal" data-target=".modal-shortcut">
+            <span class="text-primary"> التطبيقات </span>
+
+            <span class="fe fe-grid fe-16"></span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-muted my-2" href="#">
+            <span class="text-primary"> تغيير كلمة السر </span>
+            <span class="fe fe-lock fe-16"></span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-muted my-2" href="#">
+            <span class="text-primary"> تسجيل الخروج </span>
+            <span class="fe fe-log-out fe-16"></span>
+          </a>
+        </li>
+      </ul>
+
+      <span class="navbar-logo">
+        <img src="./assets/images/logomin.png" alt="logo" class="navbar-brand-img">
+      </span>
+
+
+    </nav>
+    <!-- TOP navbar -->
+
+    <!-- RIGHT navbar -->
+    <aside class="sidebar-left border-right bg-white shadow" id="leftSidebar" data-simplebar>
+      <a href="#" class="btn collapseSidebar toggle-btn d-lg-none text-muted ml-2 mt-3" data-toggle="toggle">
+        <i class="fe fe-x"><span class="sr-only"></span></i>
+      </a>
+
+      <nav class="vertnav navbar navbar-light">
+        <div class="w-100 mb-4 d-flex">
+          <a class="navbar-brand mx-auto mt-2 flex-fill text-center" href="home.html">
+            <img src="./assets/images/imarah-logo.png" alt="logo" class="navbar-brand-img" style="width: 96px">
+          </a>
+        </div>
+        <ul class="navbar-nav flex-fill w-100 mb-2">
+          <li class="nav-item active w-100 mb-2">
+            <a class="nav-link" href="home.html">
+              <i class="fe fe-home fe-24"></i>
+              <span class="ml-3 item-text">الرئيسية</span>
+            </a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a href="#forms" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link">
+              <i class="fe fe-grid fe-24"></i>
+              <span class="ml-3 item-text">لوحة التحكم</span>
+            </a>
+            <ul class="collapse list-unstyled pl-4 w-100" id="forms">
+              <li class="nav-item">
+                <a class="nav-link pl-3" href="#"><span class="ml-1 item-text">
+                    <i class="fe fe-target fe-16 pr-2"></i>
+                    الإدارات</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pl-3" href="#"><span class="ml-1 item-text">
+                    <i class="fe fe-group fe-16 pr-2"></i>
+                    المجموعات</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pl-3" href="#"><span class="ml-1 item-text">
+                    <i class="fe fe-users fe-16 pr-2"></i>
+                    المستخدمين</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pl-3" href="#"><span class="ml-1 item-text">
+                    <i class="fe fe-layers fe-16 pr-2"></i>
+                    التطبيقات</span></a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item w-100 mb-2">
+            <a class="nav-link" href="home.html">
+              <i class="fe fe-file-text fe-24"></i>
+              <span class="ml-3 item-text">الأخبار</span>
+            </a>
+          </li>
+          <li class="nav-item w-100 mb-2">
+            <a class="nav-link" href="home.html">
+              <i class="fe fe-shopping-card fe-24"></i>
+              <span class="ml-3 item-text">خدمة التخفيضات</span>
+            </a>
+          </li>
+
+          <li class="nav-item w-100 mb-2">
+            <a class="nav-link" href="home.html">
+              <i class="fe fe-file-plus fe-24"></i>
+              <span class="ml-3 item-text">خدمة المدراء</span>
+            </a>
+          </li>
+          <li class="nav-item w-100 mb-2">
+            <a class="nav-link" href="home.html">
+              <i class="fe fe-users fe-24"></i>
+              <span class="ml-3 item-text">خدمة الموظف</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    </aside>
+    <!-- RIGHT navbar -->
+
+    <main role="main" class="main-content">
+      <div class="container-fluid">
+        <h2 class="page-title">إضافة مؤتمر جديد </h2>
+        <p class="text-muted">هيدر 2</p>
+        
+        <form action="">
+          <div class="card">
+            <div class="card-header">
+                <strong class="card-title">إضافة بيانات مؤتمر جديد</strong>
+            </div>
+            <div class="card-body">
+           <div class="row">
+               <div class="col-md-3">
+                   <label for="">عنوان المؤتمر</label>
+                   <input type="text" class="form-control">
+               </div>
+               <div class="col-md-3">
+                <label for="">تاريخ المؤتمر</label>
+                <input id="_kjchkys6m" type="text" name="from_date" placeholder="" class="form-control">
+            </div>
+            <div class="col-md-3">
+                <label for="">وقت المؤتمر</label>
+                <input type="time" value="07:30:00" name="times[1442/09/07][1]" required="required" class="form-control bg-light-green">
+            </div>
+            <div class="col-md-3">
+                <label for="">مدة المؤتمر</label>
+                <input type="text" class="form-control">
+
+            </div>
+           </div>
+
+           <div class="row my-3">
+               <div class="col-md-12">
+                <label>أجندة المؤتمر</label>
+                <textarea class="form-control"  placeholder="أجندة المؤتمر" rows="6" required=""></textarea>
+               </div>
+           </div>
+
+           <div class="row my-3">
+<div class="col-md-6">
+
+
+            <div class="form-group">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" name="course_place" type="checkbox"  value="2" required>
+                <label class="form-check-label mx-1" for="course_place">عام</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" name="course_place" type="checkbox"  value="3" required>
+                <label class="form-check-label mx-1" for="course_place">إرسال إشعار بالإيميل</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" name="course_place" type="checkbox"  value="1" required>
+                <label class="form-check-label mx-1" for="course_place">إرسال تنبية قبل البدء</label>
+              </div> 
+            </div>
+            </div>
+        </div>
+
+            <div class="row d-flex align-items-baseline my-3">
+                <div class="col-md-6">
+                  <select class="custom-select">
+                    <option selected="">اختر عضو</option>
+                    <option>fff</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" name="course_place" type="checkbox"  value="2" required>
+                        <label class="form-check-label mx-1" for="course_place">رئيس الجلسة</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" name="course_place" type="checkbox"  value="3" required>
+                        <label class="form-check-label mx-1" for="course_place">يمكنة مشاركة الشاشة</label>
+                      </div>
+                     
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <span class="mx-1">إضافة عضو أخر</span>
+                    
+                    <a href="#" class="btn btn-primary btn-sm">
+                        
+                        <i class="fe fe-plus"></i>
+                      </a>
+                    <!-- <button type="submit" id="delete" name="delete" onclick="return confirm('are you confirm to delete ?');" class="btn btn-primary btn-sm mx-1">إضافة عضو أخر <i class="fe fe-plus"></i></button> -->
+                </div>
+              </div>
+
+
+              <div class="row d-flex align-items-center my-3">
+                <div class="col-md-6">
+                  <select class="custom-select">
+                    <option selected="">اختر عضو</option>
+                    <option>fff</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group m-0">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" name="course_place" type="checkbox"  value="2" required>
+                        <label class="form-check-label mx-1" for="course_place">رئيس الجلسة</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" name="course_place" type="checkbox"  value="3" required>
+                        <label class="form-check-label mx-1" for="course_place">يمكنة مشاركة الشاشة</label>
+                      </div>
+                     
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <button type="submit" id="delete" name="delete" onclick="return confirm('are you confirm to delete ?');" class="btn btn-danger btn-sm">حذف العضو <i class="fe fe-trash-2 mx-1"></i></button>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="card-footer">
+                <button type="submit" class="btn btn-primary">حفظ البيانات</button>
+                <button type="reset" class="btn btn-danger">مسح البيانات</button></div>
+
+            
+          </div>
+
+    
+        </form>
+
+      </div>
+
+
+
+
+
+      <footer class="container py-5">
+        <div class="row">
+          <div class="col-3 col-md">
+            <img src="./assets/images/footer_logo.png" class="img-fluid">
+            <small class="d-block text-muted">© 2020</small>
+          </div>
+          <div class="col-3 col-md">
+            <ul class="list-unstyled text-small">
+              <li><a href="#">عن إتمام</a></li>
+              <li><a href="#">الاخبار</a></li>
+              <li><a href="#">شروط الاستخدام</a></li>
+
+            </ul>
+          </div>
+          <div class="col-3 col-md">
+            <ul class="list-unstyled text-small">
+              <li><a href="#">مراكز التسجيل والتفعيل</a></li>
+              <li><a href="#">دليل المستخدم</a></li>
+              <li><a href="#">الأسئلة الشائعة</a></li>
+            </ul>
+
+          </div>
+          <div class="col-3 col-md">
+            <ul class="list-unstyled text-small">
+              <li><a href="#">سياسة الخصوصية</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </footer>
+
+
+
+
+
+
+
+      <!-- MODELS -->
+
+      <div class="modal fade modal-notif modal-slide" tabindex="-1" role="dialog" aria-labelledby="defaultModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="defaultModalLabel">التنبيهات</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="list-group list-group-flush my-n3">
+                <div class="list-group-item bg-transparent">
+                  <div class="row align-items-center">
+
+                    <div class="col">
+                      <small><strong>العنوان الرئيسي للتنبيه</strong></small>
+                      <div class="my-0 text-muted small">محتوي التنبيه محتوي التنبيه محتوي التنبيه</div>
+                      <small class="badge badge-pill badge-light text-muted">1m ago</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-group-item bg-transparent">
+                  <div class="row align-items-center">
+
+                    <div class="col">
+                      <small><strong>العنوان الرئيسي للتنبيه</strong></small>
+                      <div class="my-0 text-muted small">محتوي التنبيه محتوي التنبيه محتوي التنبيه</div>
+                      <small class="badge badge-pill badge-light text-muted">1m ago</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-group-item bg-transparent">
+                  <div class="row align-items-center">
+
+                    <div class="col">
+                      <small><strong>العنوان الرئيسي للتنبيه</strong></small>
+                      <div class="my-0 text-muted small">محتوي التنبيه محتوي التنبيه محتوي التنبيه</div>
+                      <small class="badge badge-pill badge-light text-muted">1m ago</small>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="list-group-item bg-transparent">
+                  <div class="row align-items-center">
+                    <div class="col">
+                      <small><strong>العنوان الرئيسي للتنبيه</strong></small>
+                      <div class="my-0 text-muted small">محتوي التنبيه محتوي التنبيه محتوي التنبيه</div>
+                      <small class="badge badge-pill badge-light text-muted">1m ago</small>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary btn-block" data-dismiss="modal">Clear All</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade modal-shortcut modal-slide" tabindex="-1" role="dialog" aria-labelledby="defaultModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="defaultModalLabel">الإختصارات</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body px-5">
+
+              <div class="row align-items-center">
+                <div class="col-6 text-center">
+                  <div class="squircle bg-success justify-content-center">
+                    <i class="fe fe-cpu fe-32 align-self-center text-white"></i>
+                  </div>
+                  <p>البريد الإلكتروني</p>
+                  
+                </div>
+                <div class="col-6 text-center">
+                  <div class="squircle bg-primary justify-content-center">
+                    <i class="fe fe-activity fe-32 align-self-center text-white"></i>
+                  </div>
+                  <p>الأنظمة التطبيقية</p>
+                </div>
+              </div>
+              <div class="row align-items-center">
+                <div class="col-6 text-center">
+                  <div class="squircle bg-primary justify-content-center">
+                    <i class="fe fe-droplet fe-32 align-self-center text-white"></i>
+                  </div>
+                  <p>الإمارة الإلكترونية</p>
+                </div>
+                <div class="col-6 text-center">
+                  <div class="squircle bg-primary justify-content-center">
+                    <i class="fe fe-upload-cloud fe-32 align-self-center text-white"></i>
+                  </div>
+                  <p>المراجعة الداخلية</p>
+                </div>
+              </div>
+              <div class="row align-items-center">
+                <div class="col-6 text-center">
+                  <div class="squircle bg-primary justify-content-center">
+                    <i class="fe fe-users fe-32 align-self-center text-white"></i>
+                  </div>
+                  <p>نظام إدارة المهام</p>
+                </div>
+                <div class="col-6 text-center">
+                  <div class="squircle bg-primary justify-content-center">
+                    <i class="fe fe-settings fe-32 align-self-center text-white"></i>
+                  </div>
+                  <p>Settings</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODELS -->
+
+
+    </main>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/moment.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/simplebar.min.js"></script>
+  <script src='js/daterangepicker.js'></script>
+  <script src='js/jquery.stickOnScroll.js'></script>
+  <script src="js/tinycolor-min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/apps.js"></script>
+
+
+</body>
+
+</html>

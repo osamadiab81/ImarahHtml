@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="./assets/images/favicon.png" />
+    <title>الإمارة الإلكترونية</title>
+    <link rel="stylesheet" href="css/simplebar.css" />
+    <link rel="stylesheet" href="css/feather.css" />
+    <link rel="stylesheet" href="css/app-light.css" id="lightTheme" />
+  </head>
+
+  <body class="vertical light rtl">
+    <div class="wrapper">
+      <!-- TOP navbar -->
+      <nav class="topnav navbar navbar-light">
+        <ul class="nav">
+          <button
+            type="button"
+            class="navbar-toggler text-muted mt-2 p-0 mr-3 collapseSidebar"
+          >
+            <i class="fe fe-menu navbar-toggler-icon"></i>
+          </button>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle text-muted pr-0"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <span class="avatar avatar-sm mt-2">
+                <img
+                  src="./assets/images/marc.jpg"
+                  alt="..."
+                  class="avatar-img rounded-circle"
+                />
+              </span>
+            </a>
+            <div
+              class="dropdown-menu dropdown-menu-right"
+              aria-labelledby="navbarDropdownMenuLink"
+            >
+              <a class="dropdown-item" href="#">الملف الشخصي</a>
+              <a class="dropdown-item" href="#">الإعدادات</a>
+            </div>
+          </li>
+          <li class="nav-item nav-notif">
+            <a
+              class="nav-link text-muted my-2"
+              href="./#"
+              data-toggle="modal"
+              data-target=".modal-notif"
+            >
+              <span class="text-primary"> التنبيهات </span>
+
+              <span class="fe fe-bell fe-16"></span>
+              <span class="dot dot-md bg-success"></span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a
+              class="nav-link text-muted my-2"
+              href="#"
+              data-toggle="modal"
+              data-target=".modal-shortcut"
+            >
+              <span class="text-primary"> التطبيقات </span>
+
+              <span class="fe fe-grid fe-16"></span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-muted my-2" href="#">
+              <span class="text-primary"> تغيير كلمة السر </span>
+              <span class="fe fe-lock fe-16"></span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-muted my-2" href="#">
+              <span class="text-primary"> تسجيل الخروج </span>
+              <span class="fe fe-log-out fe-16"></span>
+            </a>
+          </li>
+        </ul>
+
+        <span class="navbar-logo">
+          <img
+            src="./assets/images/logomin.png"
+            alt="logo"
+            class="navbar-brand-img"
+          />
+        </span>
+      </nav>
+      <!-- TOP navbar -->
+
+      <!-- RIGHT navbar -->
+      <aside
+        class="sidebar-left border-right bg-white shadow"
+        id="leftSidebar"
+        data-simplebar
+      >
+        <a
+          href="#"
+          class="btn collapseSidebar toggle-btn d-lg-none text-muted ml-2 mt-3"
+          data-toggle="toggle"
+        >
+          <i class="fe fe-x"><span class="sr-only"></span></i>
+        </a>
+
+        <nav class="vertnav navbar navbar-light">
+          <div class="w-100 mb-4 d-flex">
+            <a
+              class="navbar-brand mx-auto mt-2 flex-fill text-center"
+              href="home.html"
+            >
+              <img
+                src="./assets/images/logo.png"
+                alt="logo"
+                class="navbar-brand-img"
+              />
+            </a>
+          </div>
+          <ul class="navbar-nav flex-fill w-100 mb-2">
+            <li class="nav-item active w-100 mb-2">
+              <a class="nav-link" href="home.html">
+                <i class="fe fe-home fe-24"></i>
+                <span class="ml-3 item-text">الرئيسية</span>
+              </a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                href="#forms"
+                data-toggle="collapse"
+                aria-expanded="false"
+                class="dropdown-toggle nav-link"
+              >
+                <i class="fe fe-grid fe-24"></i>
+                <span class="ml-3 item-text">لوحة التحكم</span>
+              </a>
+              <ul class="collapse list-unstyled pl-4 w-100" id="forms">
+                <li class="nav-item">
+                  <a class="nav-link pl-3" href="#"
+                    ><span class="ml-1 item-text">
+                      <i class="fe fe-target fe-16 pr-2"></i>
+                      الإدارات</span
+                    ></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link pl-3" href="#"
+                    ><span class="ml-1 item-text">
+                      <i class="fe fe-group fe-16 pr-2"></i>
+                      المجموعات</span
+                    ></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link pl-3" href="#"
+                    ><span class="ml-1 item-text">
+                      <i class="fe fe-users fe-16 pr-2"></i>
+                      المستخدمين</span
+                    ></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link pl-3" href="#"
+                    ><span class="ml-1 item-text">
+                      <i class="fe fe-layers fe-16 pr-2"></i>
+                      التطبيقات</span
+                    ></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item w-100 mb-2">
+              <a class="nav-link" href="home.html">
+                <i class="fe fe-file-text fe-24"></i>
+                <span class="ml-3 item-text">الأخبار</span>
+              </a>
+            </li>
+            <li class="nav-item w-100 mb-2">
+              <a class="nav-link" href="home.html">
+                <i class="fe fe-shopping-card fe-24"></i>
+                <span class="ml-3 item-text">خدمة التخفيضات</span>
+              </a>
+            </li>
+
+            <li class="nav-item w-100 mb-2">
+              <a class="nav-link" href="home.html">
+                <i class="fe fe-file-plus fe-24"></i>
+                <span class="ml-3 item-text">خدمة المدراء</span>
+              </a>
+            </li>
+            <li class="nav-item w-100 mb-2">
+              <a class="nav-link" href="home.html">
+                <i class="fe fe-users fe-24"></i>
+                <span class="ml-3 item-text">خدمة الموظف</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <!-- RIGHT navbar -->
+
+      <main role="main" class="main-content">
+        <div class="container-fluid">
+          <form action="">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card-header bg-light-green">
+                    <h5>بيانات القضية</h5>
+                  </div>
+                  <div class="card-body">
+                    <div class="form-inline">
+                      <div class="form-group">
+                        <label for="year">العام</label>
+                        <select name="year" id="year" class="custom-select m-2">
+                          <option selected="">------------</option>
+                          <option>1440</option>
+                        </select>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="type">حالة القضية</label>
+                        <select class="custom-select m-2">
+                          <option value="">الكل</option>
+                          <option value="1">رسميين</option>
+                          <option value="2">مستخدمين</option>
+                          <option value="3">بند الأجور</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="card h-100">
+                  <div class="card-header bg-light-green">
+                    <h5>بيانات الجاني</h5>
+                  </div>
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-5"> اسم الجاني</label>
+                          <div class="col-sm-7">
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+
+                        <div class="form-group row">
+                          <label class="col-sm-5"> جنسية الجاني</label>
+                          <div class="col-sm-7">
+                            <select class="custom-select">
+                              <option selected="">اختر الجنسية</option>
+                              <option>مصري</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="form-group row">
+                          <label class="col-sm-5"> تاريخ القبض</label>
+                          <div class="col-sm-7">
+                            <date-picker
+                              name="sader_date"
+                              :locale="'ar-sa'"
+                              :calendar="'hijri'"
+                              :auto-submit="true"
+                              date-format="yyyy/m/d"
+                            ></date-picker>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-5"> رقم هوية الجاني</label>
+                          <div class="col-sm-7">
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+
+                        <div class="form-group row">
+                          <label class="col-sm-5"> الجنس</label>
+                          <div class="col-sm-7">
+                            <select class="custom-select">
+                              <option selected="">اختر الجنس</option>
+                              <option>ذكر</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="form-group row">
+                          <label class="col-sm-5"> العمر</label>
+                          <div class="col-sm-7">
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-header bg-light-green">
+                    <div class="row d-flex align-items-baseline">
+                      <div class="col-sm-9">
+                        <h5 class="text-primary">الجناة التابعين</h5>
+                      </div>
+                      <div class="col-sm-3">
+                        <a href="#" class="btn btn-primary btn-sm">
+                          <i class="fe fe-plus"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-5"> الاسم</label>
+                          <div class="col-sm-7">
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+
+                        <div class="form-group row">
+                          <label class="col-sm-5"> جنسية الجاني</label>
+                          <div class="col-sm-7">
+                            <select class="custom-select">
+                              <option selected="">اختر الجنسية</option>
+                              <option>مصري</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="form-group row">
+                          <label class="col-sm-5"> تاريخ القبض</label>
+                          <div class="col-sm-7">
+                            <date-picker
+                              name="sader_date"
+                              :locale="'ar-sa'"
+                              :calendar="'hijri'"
+                              :auto-submit="true"
+                              date-format="yyyy/m/d"
+                            ></date-picker>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-5"> رقم هوية الجاني</label>
+                          <div class="col-sm-7">
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+
+                        <div class="form-group row">
+                          <label class="col-sm-5"> الجنس</label>
+                          <div class="col-sm-7">
+                            <select class="custom-select">
+                              <option selected="">اختر الجنس</option>
+                              <option>ذكر</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="form-group row">
+                          <label class="col-sm-5"> العمر</label>
+                          <div class="col-sm-7">
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card h-100">
+                  <div class="card-header bg-light-green">
+                    <h5>بيانات المجني عليه</h5>
+                  </div>
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-5"> اسم المجني عليه</label>
+                          <div class="col-sm-7">
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+
+                        <div class="form-group row">
+                          <label class="col-sm-5"> جنسية المجني عليه</label>
+                          <div class="col-sm-7">
+                            <select class="custom-select">
+                              <option selected="">اختر الجنسية</option>
+                              <option>مصري</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-6"> رقم هوية المجني عليه</label>
+                          <div class="col-sm-6">
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+
+                        <div class="form-group row">
+                          <label class="col-sm-6"> الجنس</label>
+                          <div class="col-sm-6">
+                            <select class="custom-select">
+                              <option selected="">اختر الجنس</option>
+                              <option>ذكر</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-header bg-light-green">
+                    <div class="row d-flex align-items-baseline">
+                      <div class="col-sm-9">
+                        <h5 class="text-primary">المجني عليهم التابعين</h5>
+                      </div>
+                      <div class="col-sm-3">
+                        <a href="#" class="btn btn-primary btn-sm">
+                          <i class="fe fe-plus"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-5"> اسم المجني عليه</label>
+                          <div class="col-sm-7">
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+
+                        <div class="form-group row">
+                          <label class="col-sm-5"> جنسية المجني عليه</label>
+                          <div class="col-sm-7">
+                            <select class="custom-select">
+                              <option selected="">اختر الجنسية</option>
+                              <option>مصري</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-6"> رقم هوية المجني عليه</label>
+                          <div class="col-sm-6">
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+
+                        <div class="form-group row">
+                          <label class="col-sm-6"> الجنس</label>
+                          <div class="col-sm-6">
+                            <select class="custom-select">
+                              <option selected="">اختر الجنس</option>
+                              <option>ذكر</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-2">
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card-header bg-light-green">
+                    <h5>بيانات القضية</h5>
+                  </div>
+
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <div class="form-group d-flex align-items-baseline">
+                          <div class="col-md-6">
+                            <label>الاتهام</label>
+                          </div>
+                          <div class="col-md-6">
+                            <select class="custom-select">
+                              <option selected="">اختر ......</option>
+                              <option>قتل عمد</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group d-flex align-items-baseline">
+                          <div class="col-md-6">
+                            <label>الحكم</label>
+                          </div>
+                          <div class="col-md-6">
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group d-flex align-items-baseline">
+                          <div class="col-md-6">
+                            <label>رقم صك الحكم </label>
+                          </div>
+                          <div class="col-md-6">
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group d-flex align-items-baseline">
+                          <div class="col-md-6">
+                            <label>تاريخ صك الحكم</label>
+                          </div>
+                          <div class="col-md-6">
+                            <date-picker
+                              name="sader_date"
+                              :locale="'ar-sa'"
+                              :calendar="'hijri'"
+                              :auto-submit="true"
+                              date-format="yyyy/m/d"
+                            ></date-picker>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-3">
+                        <div class="form-group d-flex align-items-baseline">
+                          <div class="col-md-6">
+                            <label>رقم الأمر الملكي / السامي </label>
+                          </div>
+                          <div class="col-md-6">
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group d-flex align-items-baseline">
+                          <div class="col-md-6">
+                            <label>تاريخ الأمر الملكي / السامي</label>
+                          </div>
+                          <div class="col-md-6">
+                            <date-picker
+                              name="sader_date"
+                              :locale="'ar-sa'"
+                              :calendar="'hijri'"
+                              :auto-submit="true"
+                              date-format="yyyy/m/d"
+                            ></date-picker>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group d-flex align-items-baseline">
+                          <div class="col-md-6">
+                            <label>رقم خطاب الداخلية</label>
+                          </div>
+                          <div class="col-md-6">
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group d-flex align-items-baseline">
+                          <div class="col-md-6">
+                            <label>تاريخ خطاب الداخلية</label>
+                          </div>
+                          <div class="col-md-6">
+                            <date-picker
+                              name="sader_date"
+                              :locale="'ar-sa'"
+                              :calendar="'hijri'"
+                              :auto-submit="true"
+                              date-format="yyyy/m/d"
+                            ></date-picker>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card-header bg-light-green">
+                      <div class="d-flex align-items-baseline">
+                        <div class="col-sm-9">
+                          <h5 class="text-primary">الجهة المنفذة</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-3">
+                          <div class="form-group d-flex align-items-baseline">
+                            <div class="col-md-6">
+                              <label>المنطقة</label>
+                            </div>
+                            <div class="col-md-6">
+                              <label>منطقة مكة المكرمة</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="form-group d-flex align-items-baseline">
+                            <div class="col-md-6">
+                              <label>المدينة</label>
+                            </div>
+                            <div class="col-md-6">
+                              <select class="custom-select">
+                                <option selected="">اختر ......</option>
+                                <option>قتل عمد</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="form-group d-flex align-items-baseline">
+                            <div class="col-md-6">
+                              <label>السجن</label>
+                            </div>
+                            <div class="col-md-6">
+                              <select class="custom-select">
+                                <option selected="">اختر ......</option>
+                                <option>قتل عمد</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="form-group d-flex align-items-baseline">
+                            <div class="col-md-4">
+                              <label>تاريخ التنفيذ</label>
+                            </div>
+                            <div class="col-md-4">
+                              <input type="text" class="form-control" />
+                            </div>
+                            <div class="col-md-4">
+                              <p class="text-muted"><strong>السبت</strong></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group d-flex align-items-baseline">
+                            <div class="col-md-2">
+                              <label>ملاحظات</label>
+                            </div>
+                            <div class="col-md-10">
+                              <textarea
+                                class="form-control"
+                                rows="2"
+                              ></textarea>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row border p-2">
+                        <div class="col-md-12">
+                          <div class="d-flex align-items-baseline">
+                            <div class="col-sm-2">
+                              <h6 class="text-primary">اضافة مرفق</h6>
+                            </div>
+                            <div class="col-sm-3">
+                              <a href="#" class="btn btn-primary btn-xs">
+                                <i class="fe fe-plus"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row mt-3">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label>إختر الملف</label>
+                            <div class="custom-file">
+                              <input
+                                type="file"
+                                class="custom-file-input"
+                                id="customFile"
+                              />
+                              <label class="custom-file-label" for="customFile"
+                                >إختر الملف</label
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <footer class="container py-5">
+          <div class="row">
+            <div class="col-3 col-md">
+              <img src="./assets/images/footer_logo.png" class="img-fluid" />
+              <small class="d-block text-muted">© 2020</small>
+            </div>
+            <div class="col-3 col-md">
+              <ul class="list-unstyled text-small">
+                <li><a href="#">عن إتمام</a></li>
+                <li><a href="#">الاخبار</a></li>
+                <li><a href="#">شروط الاستخدام</a></li>
+              </ul>
+            </div>
+            <div class="col-3 col-md">
+              <ul class="list-unstyled text-small">
+                <li><a href="#">مراكز التسجيل والتفعيل</a></li>
+                <li><a href="#">دليل المستخدم</a></li>
+                <li><a href="#">الأسئلة الشائعة</a></li>
+              </ul>
+            </div>
+            <div class="col-3 col-md">
+              <ul class="list-unstyled text-small">
+                <li><a href="#">سياسة الخصوصية</a></li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+
+        <!-- MODELS -->
+
+        <div
+          class="modal fade modal-notif modal-slide"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="defaultModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="defaultModalLabel">التنبيهات</h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="list-group list-group-flush my-n3">
+                  <div class="list-group-item bg-transparent">
+                    <div class="row align-items-center">
+                      <div class="col">
+                        <small><strong>العنوان الرئيسي للتنبيه</strong></small>
+                        <div class="my-0 text-muted small">
+                          محتوي التنبيه محتوي التنبيه محتوي التنبيه
+                        </div>
+                        <small class="badge badge-pill badge-light text-muted"
+                          >1m ago</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-group-item bg-transparent">
+                    <div class="row align-items-center">
+                      <div class="col">
+                        <small><strong>العنوان الرئيسي للتنبيه</strong></small>
+                        <div class="my-0 text-muted small">
+                          محتوي التنبيه محتوي التنبيه محتوي التنبيه
+                        </div>
+                        <small class="badge badge-pill badge-light text-muted"
+                          >1m ago</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-group-item bg-transparent">
+                    <div class="row align-items-center">
+                      <div class="col">
+                        <small><strong>العنوان الرئيسي للتنبيه</strong></small>
+                        <div class="my-0 text-muted small">
+                          محتوي التنبيه محتوي التنبيه محتوي التنبيه
+                        </div>
+                        <small class="badge badge-pill badge-light text-muted"
+                          >1m ago</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="list-group-item bg-transparent">
+                    <div class="row align-items-center">
+                      <div class="col">
+                        <small><strong>العنوان الرئيسي للتنبيه</strong></small>
+                        <div class="my-0 text-muted small">
+                          محتوي التنبيه محتوي التنبيه محتوي التنبيه
+                        </div>
+                        <small class="badge badge-pill badge-light text-muted"
+                          >1m ago</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary btn-block"
+                  data-dismiss="modal"
+                >
+                  Clear All
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="modal fade modal-shortcut modal-slide"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="defaultModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="defaultModalLabel">الإختصارات</h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body px-5">
+                <div class="row align-items-center">
+                  <div class="col-6 text-center">
+                    <div class="squircle bg-success justify-content-center">
+                      <i
+                        class="fe fe-cpu fe-32 align-self-center text-white"
+                      ></i>
+                    </div>
+                    <p>البريد الإلكتروني</p>
+                  </div>
+                  <div class="col-6 text-center">
+                    <div class="squircle bg-primary justify-content-center">
+                      <i
+                        class="
+                          fe fe-activity fe-32
+                          align-self-center
+                          text-white
+                        "
+                      ></i>
+                    </div>
+                    <p>الأنظمة التطبيقية</p>
+                  </div>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col-6 text-center">
+                    <div class="squircle bg-primary justify-content-center">
+                      <i
+                        class="fe fe-droplet fe-32 align-self-center text-white"
+                      ></i>
+                    </div>
+                    <p>الإمارة الإلكترونية</p>
+                  </div>
+                  <div class="col-6 text-center">
+                    <div class="squircle bg-primary justify-content-center">
+                      <i
+                        class="
+                          fe fe-upload-cloud fe-32
+                          align-self-center
+                          text-white
+                        "
+                      ></i>
+                    </div>
+                    <p>المراجعة الداخلية</p>
+                  </div>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col-6 text-center">
+                    <div class="squircle bg-primary justify-content-center">
+                      <i
+                        class="fe fe-users fe-32 align-self-center text-white"
+                      ></i>
+                    </div>
+                    <p>نظام إدارة المهام</p>
+                  </div>
+                  <div class="col-6 text-center">
+                    <div class="squircle bg-primary justify-content-center">
+                      <i
+                        class="
+                          fe fe-settings fe-32
+                          align-self-center
+                          text-white
+                        "
+                      ></i>
+                    </div>
+                    <p>Settings</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MODELS -->
+      </main>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/simplebar.min.js"></script>
+    <script src="js/daterangepicker.js"></script>
+    <script src="js/jquery.stickOnScroll.js"></script>
+    <script src="js/tinycolor-min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/apps.js"></script>
+  </body>
+</html>
